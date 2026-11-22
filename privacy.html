@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>pve-backup — Privacy policy</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; color: #222; }
+  </style>
+</head>
+<body>
+  <h1>Privacy policy</h1>
+  <p><em>Last updated: 22 November 2026.</em></p>
+
+  <p>
+    This policy describes how <strong>pve-backup</strong> ("the app") handles data.
+    The app is a personal backup tool operated by a single person for their own
+    Proxmox VE server. It is not offered as a service to third parties.
+  </p>
+
+  <h2>What data the app accesses</h2>
+  <ul>
+    <li>Files and folders in the owner's own Google Drive account that were created by the app.</li>
+    <li>The account's storage quota, to avoid exceeding the free 15 GB limit.</li>
+  </ul>
+
+  <h2>What the app does with it</h2>
+  <ul>
+    <li>Uploads encrypted backups of the owner's server to a single folder in the owner's Drive.</li>
+    <li>Deletes the previous backup of each server guest when a newer one is uploaded.</li>
+  </ul>
+
+  <h2>Storage and security</h2>
+  <ul>
+    <li>Backups are encrypted on the server (rclone crypt: content and file names) before upload.</li>
+    <li>Google Drive therefore stores only ciphertext; the encryption key never leaves the server.</li>
+    <li>OAuth credentials are stored only on the owner's server.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <ul>
+    <li>No data is shared with third parties.</li>
+    <li>No analytics, advertising or tracking is used.</li>
+    <li>No human reads the stored data.</li>
+  </ul>
+
+  <h2>Revocation and deletion</h2>
+  <ul>
+    <li>Access can be revoked at any time from
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Deleting the backup folder in Drive removes all data stored by the app.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:rnd1248@gmail.com">rnd1248@gmail.com</a></p>
+
+  <p><a href="index.html">Back</a></p>
+</body>
+</html>
